@@ -20,6 +20,7 @@ public class StringOprations {
             System.out.println("Current result: " + result);
         }
 
+
         return result;
 
     }
@@ -48,9 +49,9 @@ public class StringOprations {
         return wordCount;
     }
 
-//    public static String replace(String input){
-//
-//    }
+   public static String replace(String input){
+
+   }
 //
 //    public static String isPalindrome(String input){
 //

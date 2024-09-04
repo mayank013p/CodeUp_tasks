@@ -20,6 +20,7 @@ public class Main {
           }
      }
 
+
      public static void user(String input) {
           Scanner sc = new Scanner(System.in);
 
@@ -49,10 +50,10 @@ public class Main {
                case "CountWords":
                     System.out.println(stringOps.countWords(input));
                     break;
-//               case "3":
-//               case "Replace":
-//                    stringOps.replace(input);
-//                    break;
+              case "3":
+              case "Replace":
+                   stringOps.replace(input);
+                   break;
 //               case "4":
 //               case "isPalindrome":
 //                    stringOps.isPalindrome(input);
