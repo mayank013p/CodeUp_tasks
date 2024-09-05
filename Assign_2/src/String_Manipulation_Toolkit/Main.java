@@ -1,3 +1,11 @@
+/***
+ * Task: The user will first enter a string. After that, the program should ask the user which operation they want to execute on the string.
+         The available operations are listed below:
+         Append, CountWords, Replace, isPalindrome, Splice, Split, MaxRepeatingCharacter, Sort, Shift, and Reverse.
+         Each method should perform its respective operation based on the user's input.
+ * Owner: Mayank Aitan
+ * Date of Creation: 5 Sep, 2024
+ */
 package String_Manipulation_Toolkit;
 
 import java.util.Scanner;
@@ -11,7 +19,7 @@ public class Main {
 
                System.out.println("Enter The String (e.g. 'Sachin') or 'exit' to quit: ");
                String input = sc.nextLine();
-               if (input == "exit") {
+               if (input.equals("exit")) {
                     System.out.println("Exiting the program, Thanks!");
                     break;
                }else{
@@ -52,40 +60,44 @@ public class Main {
                     break;
               case "3":
               case "Replace":
-                   stringOps.replace(input);
+                   System.out.println(stringOps.replace(input));
                    break;
-//               case "4":
-//               case "isPalindrome":
-//                    stringOps.isPalindrome(input);
-//                    break;
-//               case "5":
-//               case "Splice":
-//                    stringOps.splice(input);
-//                    break;
-//               case "6":
-//               case "Split":
-//                    stringOps.split(input);
-//                    break;
-//               case "7":
-//               case "MaxRepeatingCharacter":
-//                    stringOps.maxRepeatingCharacter(input);
-//                    break;
-//               case "8":
-//               case "Sort":
-//                    stringOps.sort(input);
-//                    break;
-//               case "9":
-//               case "Shift":
-//                    stringOps.shift(input);
-//                    break;
-//               case "10":
-//               case "Reverse":
-//                    stringOps.reverse(input);
-//                    break;
-//               case "11":
-//               case "Exit":
-//                    System.out.println("Exiting the operation menu.");
-//                    break;
+               case "4":
+               case "isPalindrome":
+                    System.out.println(stringOps.isPalindrome(input));
+                    break;
+               case "5":
+               case "Splice":
+                    System.out.println(stringOps.splice(input));
+                    break;
+               case "6":
+               case "Split":
+                    String[] words = stringOps.split(input);
+                    System.out.println("Split words:");
+                    for (String word : words) {
+                         System.out.println(word);
+                    }
+                    break;
+               case "7":
+               case "MaxRepeatingCharacter":
+                    System.out.println(stringOps.maxRepeatingCharacter(input));
+                    break;
+               case "8":
+               case "Sort":
+                    System.out.println(stringOps.sort(input));
+                    break;
+               case "9":
+               case "Shift":
+                    System.out.println(stringOps.shift(input));
+                    break;
+               case "10":
+               case "Reverse":
+                    System.out.println(stringOps.reverse(input));
+                    break;
+               case "11":
+               case "Exit":
+                    System.out.println("Exiting the operation menu.");
+                    break;
                default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
