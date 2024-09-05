@@ -256,11 +256,9 @@ public class StringOprations {
         for (int i = n; i < length; i++) {
             result[i] = input.charAt(i - n);
         }
-
         return new String(result);
     }
-
-
+    //reverse
     public static String reverse(String input){
         if (input == null || input.length() == 0) {
             return input;

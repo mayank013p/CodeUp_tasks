@@ -1,13 +1,12 @@
 /***
  * Task: The user will first enter a string. After that, the program should ask the user which operation they want to execute on the string.
          The available operations are listed below:
-         Append, CountWords, Replace, isPalindrome, Splice, Split, MaxRepeatingCharacter, Sort, Shift, and Reverse.
+         Append, CountWords, Replace, isPalindrome, Splice, Split, MaxRepeatingCharacter,Sort, Shift, and Reverse.
          Each method should perform its respective operation based on the user's input.
  * Owner: Mayank Aitan
- * Date of Creation: 5 Sep, 2024
+ * Date of Creation: 5 Sep,2024
  */
 package String_Manipulation_Toolkit;
-
 import java.util.Scanner;
 
 public class Main {
